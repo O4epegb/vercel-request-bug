@@ -34,7 +34,7 @@ export const getStaticProps: GetStaticProps<Props, Params> = async ({ params }) 
   }
 
   try {
-    const res = await createServerApi().api.get<Response>(`/players/${params.slug}`);
+    const res = await createServerApi().get<Response>(`/players/${params.slug}`);
 
     return {
       revalidate: 300,

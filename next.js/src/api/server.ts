@@ -7,7 +7,5 @@ export const createServerApi = (_ctx?: GetServerSidePropsContext) => {
     baseURL: `${rootUrl}/api`,
   });
 
-  return {
-    api,
-  };
+  return api;
 };

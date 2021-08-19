@@ -24,7 +24,7 @@ type Response = {
 };
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const res = await createServerApi().api.get<{ data: Response }>('/stats');
+  const res = await createServerApi().get<{ data: Response }>('/stats');
 
   return {
     revalidate: 300,

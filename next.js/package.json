@@ -3,9 +3,7 @@
   "scripts": {
     "dev": "next dev -p 7331",
     "build": "NODE_OPTIONS=\"--max-old-space-size=8192\" next build",
-    "start": "next start -p 7331",
-    "type-check": "tsc --noEmit",
-    "format": "prettier --write ."
+    "start": "next start -p 7331"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -16,7 +14,6 @@
   "devDependencies": {
     "@types/node": "^16.4.10",
     "@types/react": "^17.0.5",
-    "prettier": "^2.3.2",
     "typescript": "^4.2.3"
   }
 }

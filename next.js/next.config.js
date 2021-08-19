@@ -1,5 +1,3 @@
-const rootUrl = process.env.NEXT_PUBLIC_ROOT_URL;
-
 module.exports = {
   eslint: {
     ignoreDuringBuilds: true,
@@ -8,7 +6,7 @@ module.exports = {
     return [
       {
         source: '/api/:slug*',
-        destination: `${rootUrl}/api/:slug*`,
+        destination: `${process.env.NEXT_PUBLIC_ROOT_URL}/api/:slug*`,
       },
     ].filter(Boolean);
   },
